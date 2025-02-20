@@ -15,7 +15,7 @@ npm install -g firebase-tools
 
 Then, clone the repository, install dependencies, configure environment variables, and start the development server:
 ```bash
-git clone https://github.com/daamleon/dormproject.git && cd cardprint
+git clone https://github.com/daamleon/dormproject.git && cd dormproject
 npm install
 cp .env.example .env
 ```
