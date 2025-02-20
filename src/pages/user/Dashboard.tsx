@@ -5,7 +5,7 @@ export default function UserDashboard() {
   const { user } = useAuthStore();
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="pt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="bg-white shadow rounded-lg">
         <div className="px-4 py-5 sm:p-6">
           <h2 className="text-lg font-medium text-gray-900">Welcome to your Dashboard</h2>

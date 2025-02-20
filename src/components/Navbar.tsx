@@ -18,13 +18,13 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="z-50 fixed w-full bg-white shadow-lg rounded-b-xl">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="text-xl font-bold text-gray-800">
             EduInstitute
           </Link>
-          
+
           <div className="flex items-center space-x-4">
             {!user ? (
               <>
@@ -41,10 +41,12 @@ export default function Navbar() {
             ) : (
               <>
                 <Link
-                  to={userRole?.isAdmin ? '/admin/dashboard' : '/user/dashboard'}
+                  to={
+                    userRole?.isAdmin ? "/admin/dashboard" : "/user/dashboard"
+                  }
                   className="text-gray-600 hover:text-gray-900"
                 >
-                  {userRole?.isAdmin ? 'Admin Dashboard' : 'Dashboard'}
+                  {userRole?.isAdmin ? "Admin Dashboard" : "Dashboard"}
                 </Link>
                 <button
                   onClick={handleLogout}
